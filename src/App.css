@@ -1,0 +1,23 @@
+html,
+body,
+#root,
+.App {
+  height: 100%;
+  width: 100%;
+}
+
+.Box {
+  position: relative;
+  top: 50%;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  background: #dc3f3f;
+}
+
+@media screen and (min-width: 800px) {
+  .Box {
+    width: 50%;
+  }
+}

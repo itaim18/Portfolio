@@ -1,0 +1,121 @@
+.images {
+  position: relative;
+  width: 90%;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: row;
+  height: 240px;
+}
+.images img {
+  position: absolute;
+  border-radius: 10px;
+  transition: all 0.3s ease-in;
+  border: 10px solid rgb(22, 22, 22);
+}
+
+.computerBottom {
+  position: absolute;
+  top: 83.5%;
+  left: 40%;
+  width: 20%;
+  height: 7.5%;
+  border-radius: 50%;
+  background: rgb(22, 22, 22);
+}
+.computer {
+  position: absolute;
+  top: 75%;
+  left: 47.5%;
+  width: 5%;
+  height: 15%;
+  background: rgb(22, 22, 22);
+}
+.mobile {
+  position: absolute;
+  left: 30%;
+  top: 0%;
+  width: 31%;
+  aspect-ratio: 1/2;
+}
+.tablet {
+  top: 10%;
+  left: 2.5%;
+  width: 90%;
+  aspect-ratio: 2/1;
+}
+.desktop {
+  width: 95%;
+  aspect-ratio: 2/1;
+}
+.tabletSide {
+  top: 11%;
+  left: 90%;
+  border-radius: 10px;
+  height: 74%;
+  width: 7.5%;
+  background: rgb(20, 20, 20);
+  position: absolute;
+}
+.tabletBtn {
+  position: absolute;
+  z-index: 5;
+  top: 50%;
+  left: 15%;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: rgb(110, 110, 110);
+}
+.back {
+  cursor: pointer;
+  position: absolute;
+  top: 30%;
+  left: -6%;
+}
+.fore {
+  cursor: pointer;
+  position: absolute;
+  top: 30%;
+  right: -7%;
+}
+@media screen and (min-width: 800px) {
+  .images {
+    height: 360px;
+  }
+  .mobile {
+    left: 40%;
+    width: 20%;
+  }
+  .desktop {
+    width: 65%;
+    left: 15%;
+  }
+  .computer {
+    top: 80%;
+  }
+  .computerBottom {
+    top: 90%;
+  }
+  .back {
+    font-size: 42px;
+    left: -3%;
+  }
+  .fore {
+    font-size: 42px;
+    right: -3%;
+  }
+  .tablet {
+    width: 70%;
+    left: 15%;
+  }
+  .tabletSide {
+    left: 82.5%;
+    height: 84%;
+    width: 5%;
+  }
+  .tabletBtn {
+    height: 20px;
+    width: 20px;
+    left: 25%;
+  }
+}

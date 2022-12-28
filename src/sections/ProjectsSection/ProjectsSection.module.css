@@ -1,0 +1,16 @@
+.projects {
+  position: relative;
+  z-index: 0;
+}
+.projects h1 {
+  width: fit-content;
+  margin: 0 auto;
+}
+.projects article {
+  height: 200%;
+  border: 2px dotted black;
+  margin: 20px 20px;
+}
+.projects img {
+  border-radius: 10px;
+}

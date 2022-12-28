@@ -1,0 +1,34 @@
+.face {
+  height: 100%;
+  width: 100%;
+
+  position: relative;
+  top: 0;
+  right: 0%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+@media screen and (min-width: 450px) {
+  .face {
+    height: 150%;
+    width: 150%;
+    position: absolute;
+    top: 0%;
+    right: -42.5%;
+  }
+}
+@media screen and (min-width: 800px) {
+  .face {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    right: -12.5%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .face {
+    height: 100%;
+    width: 100%;
+    right: -12.5%;
+  }
+}
