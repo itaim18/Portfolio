@@ -1,0 +1,42 @@
+{
+  "id": 1254556,
+  "projects": [
+    {
+      "id": 1,
+      "name": "Sportodo",
+      "url": "https://sportodo.netlify.app/",
+      "desktop_image": "assets/images/projectsImages/sportodo-desktop.jpeg",
+      "mobile_image": "assets/images/projectsImages/sportodo-mobile.jpeg",
+      "tablet_image": "assets/images/projectsImages/sportodo-tablet.jpeg",
+      "deck": "Did he just throw my cat out of the window? Checkmate... Yeah, but your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should."
+    },
+    {
+      "id": 2,
+      "name": "Chit Chat",
+      "url": "https://chitnchat.netlify.app/",
+      "desktop_image": "assets/images/projectsImages/chitchat-desktop.jpeg",
+      "mobile_image": "assets/images/projectsImages/chitchat-mobile.jpeg",
+      "tablet_image": "assets/images/projectsImages/chitchat-tablet.jpeg",
+      "deck": "Did he just throw my cat out of the window? Checkmate... Yeah, but your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should."
+    },
+    {
+      "id": 3,
+      "name": "Wiki-who",
+      "url": "https://wikiwho.netlify.app/",
+      "desktop_image": "assets/images/projectsImages/wikiwho-desktop.jpeg",
+      "mobile_image": "assets/images/projectsImages/wikiwho-mobile.jpeg",
+      "tablet_image": "assets/images/projectsImages/wikiwho-tablet.jpeg",
+      "deck": "Did he just throw my cat out of the window? Checkmate... Yeah, but your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should."
+    },
+    {
+      "id": 4,
+      "name": "Deja-vue.js",
+      "deck": "Did he just throw my cat out of the window? Checkmate... Yeah, but your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should."
+    },
+    {
+      "id": 5,
+      "name": "Portfolio",
+      "deck": "Did he just throw my cat out of the window? Checkmate... Yeah, but your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should."
+    }
+  ]
+}

@@ -4,8 +4,15 @@ import Button from "../UI/Button/Button";
 const Links = () => {
   return (
     <ul style={{ listStyle: "none" }}>
-      <Button colorFront={{ color: "white" }}>facebook</Button>
-      <Button
+      <Button colorFront={{ color: "white" }}>
+        <img
+          src="assets/images/downloading.png"
+          alt="download"
+          style={{ width: "28px", filter: "grayscale(1) invert(1)" }}
+        />{" "}
+        Resume
+      </Button>
+      {/* <Button
         colorEdge={{
           background:
             "linear-gradient(to left,hsl(218,13%,12%) 0%,hsl(218, 18%, 25%) 8%,hsl(218, 8%, 5%) 92%,hsl(218, 28%, 35%) 100%)",
@@ -22,7 +29,7 @@ const Links = () => {
         colorFront={{ background: "#f14336", color: "white" }}
       >
         Gmail
-      </Button>
+      </Button> */}
     </ul>
   );
 };

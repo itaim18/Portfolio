@@ -47,6 +47,35 @@
 .topnav .icon {
   display: none;
 }
+.Resume {
+  position: relative;
+  animation: wiggle 1.5s infinite;
+}
+@keyframes wiggle {
+  0%,
+  7% {
+    transform: rotateZ(0) scale(1);
+  }
+  15% {
+    transform: rotateZ(-15deg) scale(1.025);
+  }
+  20% {
+    transform: rotateZ(10deg) scale(1.05);
+  }
+  25% {
+    transform: rotateZ(-10deg) scale(1.075);
+  }
+  30% {
+    transform: rotateZ(6deg) scale(1.1);
+  }
+  35% {
+    transform: rotateZ(-4deg) scale(1.075);
+  }
+  40%,
+  100% {
+    transform: rotateZ(0) scale(1.05);
+  }
+}
 @media screen and (min-width: 450px) {
   .topnav {
     opacity: 0.5;

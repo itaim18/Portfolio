@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import desktop from "../../../assets/sportodo/sportodo-comp.jpeg";
-import tablet from "../../../assets/sportodo/sportodo-tablet.jpeg";
-import mobile from "../../../assets/sportodo/sportodo-mobile.jpeg";
+// import desktop from "../../../assets/sportodo/sportodo-desktop.jpeg";
+// import tablet from "../../../assets/sportodo/sportodo-tablet.jpeg";
+// import mobile from "../../../assets/sportodo/sportodo-mobile.jpeg";
 import styles from "./ResponsiveImages.module.css";
-const ResponsiveImages = () => {
-  const images = ["tablet", "desktop", "mobile"];
+const ResponsiveImages = ({ images }) => {
   const [img, setImg] = useState(1);
   const moveForward = () => {
     if (img < 2) {
@@ -29,25 +28,25 @@ const ResponsiveImages = () => {
         {"<"}
       </h1>
 
-      {images[img] === "desktop" ? (
+      {img === 1 ? (
         <>
           <div className={styles.computerBottom} />
           <div className={styles.computer} />
-          <img src={desktop} alt="sportodo" className={styles.desktop} />
+          <img src={images[img]} alt="desktop" className={styles.desktop} />
         </>
       ) : null}
 
-      {images[img] === "tablet" ? (
+      {img === 0 ? (
         <>
-          <img src={tablet} alt="sportodo" className={styles.tablet} />
+          <img src={images[img]} alt="tablet" className={styles.tablet} />
           <div className={styles.tabletSide}>
             <div className={styles.tabletBtn}></div>
           </div>
         </>
       ) : null}
-      {images[img] === "mobile" ? (
+      {img === 2 ? (
         <>
-          <img src={mobile} alt="sportodo" className={styles.mobile} />{" "}
+          <img src={images[img]} alt="mobile" className={styles.mobile} />{" "}
         </>
       ) : null}
       <h1

@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+.gif {
+  width: 80%;
+  aspect-ratio: 2/1;
+  margin: 10px 10%;
+}
+.form {
+  width: min-content;
+  margin: 0 auto;
+  color: rgb(220, 63, 63);
+}
+.form label {
+  margin: 10px auto;
+}
+.form input,
+textarea {
+  background-color: transparent;
+  padding: 10px;
+  margin: 10px 10px 20px;
+  border: 5px double rgb(220, 63, 63);
+  color: rgb(220, 63, 63);
+  font-size: 16px;
+  font-family: "Press Start 2P", cursive;
+}
+.form input:focus,
+textarea:focus {
+  outline: 5px rgb(160, 1, 1);
+}
+.form textarea {
+  height: 160px;
+}
+.form input::placeholder,
+textarea::placeholder {
+  color: blueviolet;
+}
+.form button {
+  background: rgb(100, 220, 63);
+  padding: 10px 20px;
+  transition: all 0.3s ease-in-out;
+  color: aliceblue;
+  border: 3px double black;
+  left: 5%;
+  position: relative;
+  font-size: 24px;
+  font-family: "Press Start 2P", cursive;
+}
+.form button:hover {
+  background: aliceblue;
+  color: rgb(100, 220, 63);
+  opacity: 0.8;
+  cursor: pointer;
+}
+.profile {
+  border: 1px solid black;
+  margin: auto 25% 5% 25%;
+  width: 45%;
+  background-color: rgb(22, 22, 22);
+  border-radius: 50%;
+}
+.links ul li {
+  margin: 20px 5px;
+}
+.links ul li a {
+  position: relative;
+  color: coral;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+.links ul li a:hover {
+  bottom: 3px;
+}
+@media screen and (min-width: 800px) {
+  .gif {
+    width: 60%;
+    margin: 10px 20%;
+  }
+  .form h1 {
+    width: 122.5%;
+  }
+}

@@ -4,7 +4,7 @@ import Links from "../Links/Links";
 const AboutPar = () => {
   return (
     <>
-      <div className={styles.about}>
+      <div id="about" className={styles.about}>
         <h1>
           Hi! I am a <span>Front-End Developer</span> and a React developer.
         </h1>

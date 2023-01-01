@@ -1,0 +1,75 @@
+.skillsList {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin: 0 auto;
+  padding: 0 auto;
+  width: fit-content;
+}
+.skillsList li {
+  color: rgb(22, 22, 22);
+  width: 90%;
+  margin-bottom: 10px;
+  position: relative;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+.skillsList li h2,
+h3 {
+  width: fit-content;
+  margin: 10px auto;
+}
+.skillsList li:hover {
+  color: rgb(220, 63, 63);
+  background-color: rgb(22, 22, 22);
+  bottom: 5px;
+}
+.toolsList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 0 auto;
+  padding: 0 auto;
+  width: fit-content;
+}
+.toolsList li {
+  filter: grayscale(100%);
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  background: rgb(255, 255, 255, 0.5);
+  border-radius: 10px;
+  width: 160px;
+  height: 240px;
+  /* align-items: center; */
+  justify-content: center;
+  display: flex;
+}
+.toolsList li img {
+}
+.riveLogo {
+  transition: filter 0.3s ease-in-out;
+}
+.riveLogo:hover {
+  position: relative;
+  filter: grayscale(0%) invert(1);
+  bottom: 3px;
+}
+.toolsList li:hover {
+  bottom: 3px;
+  filter: grayscale(0%);
+}
+
+@media screen and (min-width: 800px) {
+  .skillsList {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .skillsList li {
+    width: 72.5%;
+  }
+  .toolsList {
+    display: flex;
+    flex-direction: row;
+  }
+}

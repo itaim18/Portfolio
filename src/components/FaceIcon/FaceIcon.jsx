@@ -8,7 +8,7 @@ function FaceIcon() {
     autoplay: true,
   });
 
-  return <RiveComponent className={styles.face} />;
+  return <RiveComponent className={styles.face} id="face" />;
 }
 
 export default FaceIcon;
