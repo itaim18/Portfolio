@@ -15,6 +15,7 @@ const moveRight = () => {
   }
 };
 window.addEventListener("scroll", moveRight);
+// think of another animations
 function App() {
   return (
     <div className="App">
