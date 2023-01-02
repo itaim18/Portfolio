@@ -45,6 +45,8 @@ h3 {
   /* align-items: center; */
   justify-content: center;
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .toolsList li img {
 }
@@ -69,7 +71,14 @@ h3 {
     width: 72.5%;
   }
   .toolsList {
+    padding: 0 auto;
+    width: 95%;
+    flex-wrap: wrap;
     display: flex;
     flex-direction: row;
+  }
+  .toolsList li {
+    width: 260px;
+    height: 360px;
   }
 }

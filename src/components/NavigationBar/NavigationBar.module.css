@@ -48,8 +48,13 @@
   display: none;
 }
 .Resume {
+  color: #3676ff;
   position: relative;
+  transition: all 0.5s ease-in-out;
   animation: wiggle 1.5s infinite;
+}
+.Resume:hover {
+  animation: none;
 }
 @keyframes wiggle {
   0%,

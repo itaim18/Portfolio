@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./AboutPar.module.css";
-import Links from "../Links/Links";
+import Button from "../UI/Button/Button";
 const AboutPar = () => {
   return (
     <>
@@ -18,7 +18,20 @@ const AboutPar = () => {
           at the age of 19 with a{" "}
           <span>bachelor degree in computer science</span>.
         </p>
-        <Links />
+        <a
+          title="Resume"
+          href="assets/files/Resume.pdf"
+          download="Itai Mizlish - Resume"
+        >
+          <Button colorFront={{ color: "white" }}>
+            <img
+              src="assets/images/downloading.png"
+              alt="download"
+              style={{ width: "28px", filter: "grayscale(1) invert(1)" }}
+            />{" "}
+            Resume
+          </Button>
+        </a>
       </div>
     </>
   );

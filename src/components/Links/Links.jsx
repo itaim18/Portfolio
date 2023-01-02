@@ -4,14 +4,6 @@ import Button from "../UI/Button/Button";
 const Links = () => {
   return (
     <ul style={{ listStyle: "none" }}>
-      <Button colorFront={{ color: "white" }}>
-        <img
-          src="assets/images/downloading.png"
-          alt="download"
-          style={{ width: "28px", filter: "grayscale(1) invert(1)" }}
-        />{" "}
-        Resume
-      </Button>
       {/* <Button
         colorEdge={{
           background:

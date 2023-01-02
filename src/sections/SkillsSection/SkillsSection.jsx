@@ -22,8 +22,8 @@ const SkillsSection = () => {
     padding: "5px ",
   };
   return (
-    <div id="skills">
-      <h1 style={{ margin: "0 auto", width: "fit-content" }}>Skills</h1>
+    <div style={{ margin: "auto auto 50px" }} id="skills">
+      <h1 style={{ margin: "10px auto", width: "fit-content" }}>Skills</h1>
       <section>
         <h1 style={{ margin: "2.5% 5%", width: "fit-content" }}>knowledge</h1>
         <ul className={styles.skillsList}>
@@ -101,6 +101,11 @@ const SkillsSection = () => {
               height={100}
               className={styles.riveLogo}
             />
+            <h3>Rive</h3>
+            <p>
+              Must go faster. Eventually, you do plan to have dinosaurs on your
+              dinosaur tour, right? They're using our own satellites against us.
+            </p>
           </li>
           <li>
             <img
@@ -108,6 +113,11 @@ const SkillsSection = () => {
               alt="tool"
               height={100}
             />
+            <h3>Figma</h3>
+            <p>
+              Must go faster. Eventually, you do plan to have dinosaurs on your
+              dinosaur tour, right? They're using our own satellites against us.
+            </p>
           </li>
           <li className={styles.riveLogo}>
             <img
@@ -116,6 +126,11 @@ const SkillsSection = () => {
               className={styles.riveLogo}
               height={100}
             />
+            <h3>Responsive Design</h3>
+            <p>
+              Must go faster. Eventually, you do plan to have dinosaurs on your
+              dinosaur tour, right? They're using our own satellites against us.
+            </p>
           </li>
           <li>
             <img
@@ -123,6 +138,11 @@ const SkillsSection = () => {
               alt="tool"
               height={100}
             />
+            <h3>CODEPEN</h3>
+            <p>
+              Must go faster. Eventually, you do plan to have dinosaurs on your
+              dinosaur tour, right? They're using our own satellites against us.
+            </p>
           </li>
           <li>
             <img
@@ -130,6 +150,11 @@ const SkillsSection = () => {
               alt="tool"
               height={100}
             />
+            <h3>Photoshop</h3>
+            <p>
+              Must go faster. Eventually, you do plan to have dinosaurs on your
+              dinosaur tour, right? They're using our own satellites against us.
+            </p>
           </li>
           <li>
             <img
@@ -137,6 +162,11 @@ const SkillsSection = () => {
               alt="tool"
               height={100}
             />
+            <h3>Whiteboard & Marker</h3>
+            <p>
+              Must go faster. Eventually, you do plan to have dinosaurs on your
+              dinosaur tour, right? They're using our own satellites against us.
+            </p>
           </li>
         </ul>
         <h1 style={{ margin: "2.5% 5%", width: "fit-content" }}>hobbies</h1>
@@ -147,6 +177,11 @@ const SkillsSection = () => {
               alt="tool"
               height={100}
             />
+            <h3>Board Games</h3>
+            <p>
+              Must go faster. Eventually, you do plan to have dinosaurs on your
+              dinosaur tour, right? They're using our own satellites against us.
+            </p>
           </li>
           <li>
             <img
@@ -154,6 +189,11 @@ const SkillsSection = () => {
               alt="tool"
               height={100}
             />
+            <h3>Doctor Who</h3>
+            <p>
+              Must go faster. Eventually, you do plan to have dinosaurs on your
+              dinosaur tour, right? They're using our own satellites against us.
+            </p>
           </li>
           <li>
             <img
@@ -161,6 +201,11 @@ const SkillsSection = () => {
               alt="tool"
               height={100}
             />
+            <h3>Workouts</h3>
+            <p>
+              Must go faster. Eventually, you do plan to have dinosaurs on your
+              dinosaur tour, right? They're using our own satellites against us.
+            </p>
           </li>
           <li>
             <img
@@ -169,6 +214,11 @@ const SkillsSection = () => {
               // style={{ margin: "0 -20%" }}
               height={100}
             />
+            <h3>Cooking and eating quiche</h3>
+            <p>
+              Must go faster. Eventually, you do plan to have dinosaurs on your
+              dinosaur tour, right? They're using our own satellites against us.
+            </p>
           </li>
           <li>
             <img
@@ -176,6 +226,11 @@ const SkillsSection = () => {
               alt="tool"
               height={100}
             />
+            <h3>Digital Sketches</h3>
+            <p>
+              Must go faster. Eventually, you do plan to have dinosaurs on your
+              dinosaur tour, right? They're using our own satellites against us.
+            </p>
           </li>
         </ul>
       </section>

@@ -57,8 +57,34 @@ textarea::placeholder {
   background-color: rgb(22, 22, 22);
   border-radius: 50%;
 }
+.links {
+  column-count: 2;
+  column-gap: 0px;
+  column-rule: 3px dashed coral;
+  background: rgb(0, 0, 0, 0.1);
+  border-radius: 10px;
+  width: 92.5%;
+
+  height: 90%;
+  margin: 20px auto;
+}
+.links h1 {
+  color: coral;
+  background: rgb(0, 0, 0, 0.3);
+  border-radius: 10px;
+  width: 95%;
+  font-size: 26px;
+  column-span: all;
+  padding: 10px;
+  margin: 20px auto 0;
+  position: relative;
+  bottom: 20px;
+}
+.links ul {
+  line-height: 1.6;
+}
 .links ul li {
-  margin: 20px 5px;
+  margin: 0px 2px 20px -12px;
 }
 .links ul li a {
   position: relative;
@@ -76,5 +102,13 @@ textarea::placeholder {
   }
   .form h1 {
     width: 122.5%;
+  }
+  .links h1 {
+    font-size: 32px;
+    width: 97.5%;
+    text-align: center;
+    column-span: all;
+    padding: 10px;
+    margin: 20px auto 0;
   }
 }

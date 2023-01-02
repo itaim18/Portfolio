@@ -31,11 +31,10 @@
     {
       "id": 4,
       "name": "Deja-vue.js",
-      "deck": "Did he just throw my cat out of the window? Checkmate... Yeah, but your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should."
-    },
-    {
-      "id": 5,
-      "name": "Portfolio",
+      "url": "https://deja-vuejs.netlify.app/",
+      "desktop_image": "assets/images/projectsImages/dejaVue-desktop.jpeg",
+      "mobile_image": "assets/images/projectsImages/dejaVue-mobile.jpeg",
+      "tablet_image": "assets/images/projectsImages/dejaVue-tablet.jpeg",
       "deck": "Did he just throw my cat out of the window? Checkmate... Yeah, but your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should."
     }
   ]

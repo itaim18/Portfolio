@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import styles from "./NavigationBar.module.css";
 import { BsFillHouseFill, BsPersonLinesFill } from "react-icons/bs";
 import { IoIosApps } from "react-icons/io";
@@ -6,9 +6,22 @@ import { FaShapes } from "react-icons/fa";
 import { AiFillPhone, AiOutlineClose } from "react-icons/ai";
 import { GiHamburgerMenu } from "react-icons/gi";
 const NavigationBar = () => {
+  const [isDownloaded, setIsDownloaded] = useState(false);
+  useEffect(() => {
+    const checkD = localStorage.getItem("isDownloaded");
+    if (checkD === "true") {
+      setIsDownloaded(true);
+    }
+  }, []);
+
   const [showSubMenu, setShowSubMenu] = useState(false);
+  var pauseAnimation = { animation: "none" };
   const toggleMenu = () => {
     setShowSubMenu((prevState) => !prevState);
+  };
+  const downloadFile = () => {
+    setIsDownloaded(true);
+    localStorage.setItem("isDownloaded", "true");
   };
   return (
     <div
@@ -31,8 +44,16 @@ const NavigationBar = () => {
         <a title="Contact" href="#contact">
           <AiFillPhone />
         </a>
-        <a title="Resume" href="#contact">
-          <BsPersonLinesFill className={styles.Resume} />
+        <a
+          title="Resume"
+          href="assets/files/Resume.pdf"
+          download="Itai Mizlish - Resume"
+          onClick={downloadFile}
+        >
+          <BsPersonLinesFill
+            className={styles.Resume}
+            style={isDownloaded ? pauseAnimation : null}
+          />
         </a>
       </div>
     </div>

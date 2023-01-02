@@ -40,44 +40,27 @@ const ContactSection = () => {
         alt="profile"
         className={styles.profile}
       />
-      <div
-        className={styles.links}
-        style={{
-          width: "75%",
-          columnCount: 3,
-          columnGap: "10px",
-          columnRule: "5px dashed coral",
-          margin: "10px",
-        }}
-      >
-        <h1
-          style={{
-            width: "50%",
-            columnSpan: "all",
-            padding: "10px",
-            margin: "20px auto 0",
-          }}
-        >
-          Stay In Touch
-        </h1>
+      <div className={styles.links}>
+        <h1>Stay In Touch</h1>
         <ul style={{ listStyle: "none", position: "relative" }}>
           <li>
-            <a href="">resume</a>
+            <a href="https://www.linkedin.com/in/itai-mizlish/">Linkedin</a>
           </li>
           <li>
-            <a href="">linkedin</a>
+            <a href="https://github.com/itaim18">Github</a>
           </li>
           <li>
-            <a href="">github</a>
+            <a href="https://github.com/itaim18">Medium</a>
           </li>
           <li>
-            <a href="">instagram </a>
-          </li>
-          <li>
-            <a href=""> email</a>
-          </li>
-          <li>
-            <a href="">address</a>
+            <a href="mailto: itaim148@gmail.com"> Email</a>
+            <p style={{ color: "coral", wordBreak: "break-all" }}>
+              itaim148@gmail.com
+            </p>
+
+            <p style={{ color: "coral" }}> Central, Israel</p>
+
+            <p style={{ color: "coral" }}> Created In Dec 22</p>
           </li>
         </ul>
       </div>
