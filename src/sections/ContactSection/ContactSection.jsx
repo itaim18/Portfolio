@@ -1,7 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Card from "../../components/UI/Card/Card";
 import styles from "./ContactSection.module.css";
 const ContactSection = () => {
+  function copyToClipboard() {
+    var Text = document.getElementById("content");
+    var copyText = Text.textContent;
+    navigator.clipboard.writeText(copyText).then(() => {
+      // Alert the user that the action took place.
+      // Nobody likes hidden stuff being done under the hood!
+
+      Text.textContent = "Copied!";
+      Text.style.color = "#00a7c9";
+      setTimeout(() => {
+        document.getElementById("content").textContent = "itaim148@gmail.com";
+        Text.style.color = "coral";
+      }, 3000);
+    });
+  }
   return (
     <div id="contact">
       <h1 style={{ width: "fit-content", margin: "5px auto 5px" }}>Contact</h1>
@@ -50,11 +65,16 @@ const ContactSection = () => {
             <a href="https://github.com/itaim18">Github</a>
           </li>
           <li>
-            <a href="https://github.com/itaim18">Medium</a>
+            <a href="https://medium.com/@itaim148">Medium</a>
           </li>
           <li>
-            <a href="mailto: itaim148@gmail.com"> Email</a>
-            <p style={{ color: "coral", wordBreak: "break-all" }}>
+            {/* <a href="mailto: itaim148@gmail.com"> Email</a> */}
+            <p
+              className={styles.content}
+              id="content"
+              onClick={copyToClipboard}
+              style={{ color: "coral", wordBreak: "break-all" }}
+            >
               itaim148@gmail.com
             </p>
 

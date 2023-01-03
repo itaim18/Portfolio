@@ -96,6 +96,14 @@ textarea::placeholder {
 .links ul li a:hover {
   bottom: 3px;
 }
+.content {
+  transition: bottom 0.3s ease-in-out;
+  position: relative;
+}
+.content:hover {
+  bottom: 3px;
+  cursor: pointer;
+}
 @media screen and (min-width: 800px) {
   .gif {
     width: 60%;
