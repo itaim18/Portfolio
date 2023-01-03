@@ -28,27 +28,47 @@ h3 {
 .toolsList {
   list-style: none;
   display: flex;
-  flex-direction: column;
+
+  flex-direction: row;
   gap: 30px;
-  margin: 0 auto;
-  padding: 0 auto;
-  width: fit-content;
+  margin: 5px;
+  padding: 0;
+  flex-wrap: wrap;
+  width: 100%;
 }
 .toolsList li {
   filter: grayscale(100%);
   transition: all 0.3s ease-in-out;
   position: relative;
-  background: rgb(255, 255, 255, 0.5);
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0.2)
+  );
+  filter: drop-shadow(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 10px;
-  width: 160px;
-  height: 240px;
-  /* align-items: center; */
+  width: 185px;
+  height: 360px;
   justify-content: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
-.toolsList li img {
+.toolsList li:hover {
+  color: red;
+  box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.37);
+}
+.toolsList li h3 {
+  text-align: center;
+}
+.toolsList li p {
+  line-height: 1.2;
+  font-size: 14px;
+  text-align: justify;
+  word-break: break-all;
 }
 .riveLogo {
   transition: filter 0.3s ease-in-out;
@@ -71,7 +91,9 @@ h3 {
     width: 72.5%;
   }
   .toolsList {
+    width: fit-content;
     padding: 0 auto;
+    margin: 0 5%;
     width: 95%;
     flex-wrap: wrap;
     display: flex;

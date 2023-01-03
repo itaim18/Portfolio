@@ -214,7 +214,7 @@ const SkillsSection = () => {
               // style={{ margin: "0 -20%" }}
               height={100}
             />
-            <h3>Cooking and eating quiche</h3>
+            <h3>Eating quiche</h3>
             <p>
               Must go faster. Eventually, you do plan to have dinosaurs on your
               dinosaur tour, right? They're using our own satellites against us.
