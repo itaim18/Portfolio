@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 .about {
   font-family: "Press Start 2P", cursive;
+  font-family: Satoshi, sans-serif;
   color: rgba(255, 255, 255, 0.9);
   position: relative;
   top: -67.5%;
@@ -10,10 +11,14 @@
   line-height: 1.4;
 }
 .about h1 {
-  font-size: 24px;
+  line-height: 1;
+  font-size: 4rem;
   font-weight: 600;
+  margin: -70% 0 40px;
 }
 .about p {
+  margin: 0;
+  font-size: 24px;
   max-width: 380px;
   letter-spacing: 1.1px;
 }
@@ -36,6 +41,14 @@
 @media only screen and (min-width: 1200px) {
   .about {
     top: 30%;
-    max-width: 450px;
+    max-width: 800px;
+    margin: 20px;
+  }
+  .about h1 {
+    margin: 40px 0;
+  }
+  .about p {
+    margin: 20px 0;
+    max-width: 500px;
   }
 }

@@ -1,9 +1,10 @@
 import React from "react";
 import ResponsiveImages from "../../components/UI/ResponsiveImages/ResponsiveImages";
 import Button from "../../components/UI/Button/Button";
+import styles from "./Project.module.css";
 const Project = ({ title, deck, images, liveLink }) => {
   return (
-    <article>
+    <article className={styles.project}>
       <ResponsiveImages images={images} />
       <h1>{title}</h1>
       <p>{deck}</p>

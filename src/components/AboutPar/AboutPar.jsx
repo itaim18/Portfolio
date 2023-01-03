@@ -6,16 +6,12 @@ const AboutPar = () => {
     <>
       <div id="about" className={styles.about}>
         <h1>
-          Hi! I am a <span>Front-End Developer</span> and a React developer.
+          Hi, I'm Itai.
+          <br /> <span>Front-End Developer</span>.
         </h1>
         <p>
-          i am a <span> UI/UX designer</span>, a <span> react developer</span>{" "}
-          and a quiche lover. knowledgeable in{" "}
-          <span style={{ color: "#efd81d" }}>Js</span>,{" "}
-          <span style={{ color: "#68a063" }}> node.js</span>,
-          <span style={{ color: "#4faa41" }}>mongoDB</span> and{" "}
-          <span style={{ color: "#3b4854" }}> express</span> , graduated college
-          at the age of 19 with a{" "}
+          I am a <span> UI/UX designer</span>, a <span> react developer</span>{" "}
+          and a quiche lover. College graduate at the age of 19 with a{" "}
           <span>bachelor degree in computer science</span>.
         </p>
         <a

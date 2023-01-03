@@ -3,31 +3,32 @@
   "projects": [
     {
       "id": 1,
-      "name": "Sportodo",
-      "url": "https://sportodo.netlify.app/",
-      "desktop_image": "assets/images/projectsImages/sportodo-desktop.jpeg",
-      "mobile_image": "assets/images/projectsImages/sportodo-mobile.jpeg",
-      "tablet_image": "assets/images/projectsImages/sportodo-tablet.jpeg",
-      "deck": "Did he just throw my cat out of the window? Checkmate... Yeah, but your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should."
-    },
-    {
-      "id": 2,
       "name": "Chit Chat",
       "url": "https://chitnchat.netlify.app/",
       "desktop_image": "assets/images/projectsImages/chitchat-desktop.jpeg",
       "mobile_image": "assets/images/projectsImages/chitchat-mobile.jpeg",
       "tablet_image": "assets/images/projectsImages/chitchat-tablet.jpeg",
-      "deck": "Did he just throw my cat out of the window? Checkmate... Yeah, but your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should."
+      "deck": "Web app in which I faced challenges in fetching data and organizing it. And also, used react router as it is a MPA and many other units of code around the pages such as navbar and modals"
     },
     {
-      "id": 3,
+      "id": 2,
       "name": "Wiki-who",
       "url": "https://wikiwho.netlify.app/",
       "desktop_image": "assets/images/projectsImages/wikiwho-desktop.jpeg",
       "mobile_image": "assets/images/projectsImages/wikiwho-mobile.jpeg",
       "tablet_image": "assets/images/projectsImages/wikiwho-tablet.jpeg",
-      "deck": "Did he just throw my cat out of the window? Checkmate... Yeah, but your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should."
+      "deck": "a mock site for a real framework that shows how the framework started how to use it and how it works etc. With html, css , react and js dom manipulation"
     },
+    {
+      "id": 3,
+      "name": "Sportodo",
+      "url": "https://sportodo.netlify.app/",
+      "desktop_image": "assets/images/projectsImages/sportodo-desktop.jpeg",
+      "mobile_image": "assets/images/projectsImages/sportodo-mobile.jpeg",
+      "tablet_image": "assets/images/projectsImages/sportodo-tablet.jpeg",
+      "deck": "Web app that lets you find the sport you're looking for with a search bar. With react, css and functional programming in Js."
+    },
+
     {
       "id": 4,
       "name": "Deja-vue.js",
@@ -35,7 +36,7 @@
       "desktop_image": "assets/images/projectsImages/dejaVue-desktop.jpeg",
       "mobile_image": "assets/images/projectsImages/dejaVue-mobile.jpeg",
       "tablet_image": "assets/images/projectsImages/dejaVue-tablet.jpeg",
-      "deck": "Did he just throw my cat out of the window? Checkmate... Yeah, but your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should."
+      "deck": "Chat app with a search bar for users that let you send texts and Images. Keeps seen messages in check. Put images in full screen. And have different layouts for every kind of viewport. Using react, firebase ,sass and js snippets"
     }
   ]
 }

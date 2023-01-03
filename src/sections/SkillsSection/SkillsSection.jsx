@@ -103,8 +103,8 @@ const SkillsSection = () => {
             />
             <h3>Rive</h3>
             <p>
-              Must go faster. Eventually, you do plan to have dinosaurs on your
-              dinosaur tour, right? They're using our own satellites against us.
+              Helps making better styled and interactive UI components. With not
+              only great design, but great animations too.
             </p>
           </li>
           <li>
@@ -115,8 +115,8 @@ const SkillsSection = () => {
             />
             <h3>Figma</h3>
             <p>
-              Must go faster. Eventually, you do plan to have dinosaurs on your
-              dinosaur tour, right? They're using our own satellites against us.
+              Visioning sites and having a better grasp of what my web app would
+              eventually look like, is easier with figma.
             </p>
           </li>
           <li className={styles.riveLogo}>
@@ -128,8 +128,8 @@ const SkillsSection = () => {
             />
             <h3>Responsive Design</h3>
             <p>
-              Must go faster. Eventually, you do plan to have dinosaurs on your
-              dinosaur tour, right? They're using our own satellites against us.
+              Using media queries and viewport selectors helps making web apps
+              look more appealing in every OS.
             </p>
           </li>
           <li>
@@ -140,8 +140,8 @@ const SkillsSection = () => {
             />
             <h3>CODEPEN</h3>
             <p>
-              Must go faster. Eventually, you do plan to have dinosaurs on your
-              dinosaur tour, right? They're using our own satellites against us.
+              Inspires new designs, UX interactions or assist in filling general
+              great FE requirements in code.
             </p>
           </li>
           <li>
@@ -152,8 +152,8 @@ const SkillsSection = () => {
             />
             <h3>Photoshop</h3>
             <p>
-              Must go faster. Eventually, you do plan to have dinosaurs on your
-              dinosaur tour, right? They're using our own satellites against us.
+              A Wonderful tool to beautify images or correcting them for
+              personal uses.
             </p>
           </li>
           <li>
@@ -164,8 +164,8 @@ const SkillsSection = () => {
             />
             <h3>Whiteboard & Marker</h3>
             <p>
-              Must go faster. Eventually, you do plan to have dinosaurs on your
-              dinosaur tour, right? They're using our own satellites against us.
+              Assist in making small sketches, for code units algorithms and
+              simplifying architectural needs
             </p>
           </li>
         </ul>
@@ -179,8 +179,8 @@ const SkillsSection = () => {
             />
             <h3>Board Games</h3>
             <p>
-              Must go faster. Eventually, you do plan to have dinosaurs on your
-              dinosaur tour, right? They're using our own satellites against us.
+              I believe in sitting down with friends and playing with them and
+              challenging myself and our intelligence.
             </p>
           </li>
           <li>
@@ -191,8 +191,8 @@ const SkillsSection = () => {
             />
             <h3>Doctor Who</h3>
             <p>
-              Must go faster. Eventually, you do plan to have dinosaurs on your
-              dinosaur tour, right? They're using our own satellites against us.
+              This long-running show keeps the clever plots, well developed
+              characters, and amazing actings. “Allons-y!”
             </p>
           </li>
           <li>
@@ -203,23 +203,11 @@ const SkillsSection = () => {
             />
             <h3>Workouts</h3>
             <p>
-              Must go faster. Eventually, you do plan to have dinosaurs on your
-              dinosaur tour, right? They're using our own satellites against us.
+              Keeping in physical shape is important for me and I see it as a
+              great value to live by.
             </p>
           </li>
-          <li>
-            <img
-              src="assets/images/skillsImages/quiche.png"
-              alt="tool"
-              // style={{ margin: "0 -20%" }}
-              height={100}
-            />
-            <h3>Eating quiche</h3>
-            <p>
-              Must go faster. Eventually, you do plan to have dinosaurs on your
-              dinosaur tour, right? They're using our own satellites against us.
-            </p>
-          </li>
+
           <li>
             <img
               src="assets/images/skillsImages/art.png"
@@ -228,8 +216,9 @@ const SkillsSection = () => {
             />
             <h3>Digital Sketches</h3>
             <p>
-              Must go faster. Eventually, you do plan to have dinosaurs on your
-              dinosaur tour, right? They're using our own satellites against us.
+              I love digital drawing and I do it whenever I have free time or
+              inspired to draw something that could value me or will satisfy
+              what I visioned.
             </p>
           </li>
         </ul>
