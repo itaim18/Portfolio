@@ -73,7 +73,11 @@ const ContactSection = () => {
               className={styles.content}
               id="content"
               onClick={copyToClipboard}
-              style={{ color: "coral", wordBreak: "break-all" }}
+              style={{
+                color: "coral",
+                wordBreak: "break-all",
+                fontSize: "15px",
+              }}
             >
               itaim148@gmail.com
             </p>

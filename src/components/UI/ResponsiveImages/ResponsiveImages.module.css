@@ -87,8 +87,42 @@
     width: 20%;
   }
   .desktop {
+    top: 10%;
     width: 65%;
     left: 15%;
+  }
+  .computer {
+    top: 65%;
+  }
+  .computerBottom {
+    top: 75%;
+  }
+  .back {
+    font-size: 42px;
+    left: -3%;
+  }
+  .fore {
+    font-size: 42px;
+    right: -3%;
+  }
+  .tablet {
+    width: 70%;
+    left: 15%;
+  }
+  .tabletSide {
+    left: 82.5%;
+    height: 57.5%;
+    width: 5%;
+  }
+  .tabletBtn {
+    height: 20px;
+    width: 20px;
+    left: 25%;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .desktop {
+    top: 2.5%;
   }
   .computer {
     top: 80%;
@@ -104,10 +138,7 @@
     font-size: 42px;
     right: -3%;
   }
-  .tablet {
-    width: 70%;
-    left: 15%;
-  }
+
   .tabletSide {
     left: 82.5%;
     height: 84%;

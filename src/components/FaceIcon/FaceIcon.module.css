@@ -1,7 +1,6 @@
 .face {
   height: 140%;
   width: 140%;
-
   position: relative;
   top: -47.5%;
   right: 40%;
@@ -26,6 +25,14 @@
   }
 }
 @media screen and (min-width: 1200px) {
+  .face {
+    height: 90%;
+    width: 90%;
+    right: -7.5%;
+    top: 1.5%;
+  }
+}
+@media screen and (min-width: 1500px) {
   .face {
     height: 100%;
     width: 100%;
