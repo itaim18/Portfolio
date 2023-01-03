@@ -20,6 +20,7 @@ const ProjectsSection = () => {
             deck={project.deck}
             images={images}
             liveLink={project.url}
+            codeLink={project.code_url}
           />
         );
       })}
