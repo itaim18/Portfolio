@@ -26,13 +26,15 @@ const SkillsSection = () => {
     const arr = Array.from(
       document.getElementById("tools").querySelectorAll("ul li")
     );
-    VanillaTilt.init(arr, {
-      max: 25,
-      speed: 400,
-      glare: true,
-      "max-glare": 0.5,
-      scale: 1.05,
-    });
+    if (window.innerWidth > 1200) {
+      VanillaTilt.init(arr, {
+        max: 15,
+        speed: 400,
+        glare: true,
+        "max-glare": 0.5,
+        scale: 1.05,
+      });
+    }
   }, []);
 
   return (
