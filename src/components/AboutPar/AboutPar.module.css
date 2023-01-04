@@ -15,6 +15,7 @@
   font-size: 4rem;
   font-weight: 600;
   margin: -70% 0 40px;
+  height: 200px;
 }
 .about p {
   margin: 0;
@@ -34,8 +35,11 @@
 }
 @media only screen and (min-width: 800px) {
   .about {
-    top: 25%;
+    top: 50%;
     max-width: 325px;
+  }
+  .about h1 {
+    height: 300px;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -46,6 +50,8 @@
   }
   .about h1 {
     margin: 40px 0;
+
+    height: 120px;
   }
   .about p {
     margin: 20px 0;

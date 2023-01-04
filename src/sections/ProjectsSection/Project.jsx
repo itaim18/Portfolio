@@ -1,13 +1,40 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ResponsiveImages from "../../components/UI/ResponsiveImages/ResponsiveImages";
-import Button from "../../components/UI/Button/Button";
+// import Button from "../../components/UI/Button/Button";
 import styles from "./Project.module.css";
+import ScrollReveal from "scrollreveal";
+const Button = React.lazy(() => import("../../components/UI/Button/Button"));
 const Project = ({ title, deck, images, liveLink, codeLink }) => {
+  useEffect(() => {
+    ScrollReveal({ reset: true, duration: 500 }).reveal("#project", {
+      delay: "300",
+      distance: "10%",
+      duration: "700",
+      opacity: 0,
+      scale: 0.25,
+    });
+
+    ScrollReveal({ reset: true }).reveal("#title", {
+      delay: "300",
+      origin: "left",
+      duration: "700",
+      distance: "100%",
+      opacity: 0.3,
+    });
+    ScrollReveal({ reset: true }).reveal("#deck", {
+      delay: "300",
+      origin: "right",
+      duration: "700",
+      distance: "75%",
+      opacity: 0.3,
+    });
+  }, []);
+
   return (
-    <article className={styles.project}>
+    <article id="project" className={styles.project}>
       <ResponsiveImages images={images} />
-      <h1>{title}</h1>
-      <p>{deck}</p>
+      <h1 id="title">{title}</h1>
+      <p id="deck">{deck}</p>
       <div
         style={{
           margin: "0 auto",

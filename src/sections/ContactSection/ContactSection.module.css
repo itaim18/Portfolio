@@ -40,7 +40,7 @@ textarea::placeholder {
   transition: all 0.3s ease-in-out;
   color: aliceblue;
   border: 3px double black;
-  left: 5%;
+  left: 20px;
   position: relative;
   font-size: 24px;
   font-family: "Press Start 2P", cursive;

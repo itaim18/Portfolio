@@ -5,6 +5,7 @@ import { IoIosApps } from "react-icons/io";
 import { FaShapes } from "react-icons/fa";
 import { AiFillPhone, AiOutlineClose } from "react-icons/ai";
 import { GiHamburgerMenu } from "react-icons/gi";
+
 const NavigationBar = () => {
   const [isDownloaded, setIsDownloaded] = useState(false);
   useEffect(() => {

@@ -6,14 +6,14 @@ const AboutPar = () => {
   useEffect(() => {
     typer("#some-id")
       .cursor({ block: true, blink: "hard", color: "red" })
-      .line("UI/UX Architect")
+      .line("UI/UX Architect,")
       .pause(300)
       .back("all")
-      .continue("Whovian")
+      .continue("Whovian,")
       .pause(300)
       .back("all")
-      .continue("FrontEnd Developer", {
-        military: { speed: 20, chars: 2 },
+      .continue("FrontEnd Developer.", {
+        military: { speed: 25, chars: 2 },
       });
   }, []);
 
@@ -23,15 +23,7 @@ const AboutPar = () => {
         <h1>
           I'm Itai. 👨‍💻
           <br />
-          <span
-            // class="typer"
-            id="some-id"
-            data-cursordisplay="_"
-            // data-words="poised,punctual,matchmaker.com"
-            // data-colors="#ed426d,#6d67c6,#b74033"
-            // data-delay="50"
-            // data-loop="1"
-          ></span>
+          <span id="some-id"></span>
         </h1>
         <p>
           I am a <span> UI/UX designer</span>, a <span> react developer</span>{" "}

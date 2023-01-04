@@ -39,14 +39,17 @@ const ContactSection = () => {
             Name:
           </label>
           <input type="text" name="name" placeholder="john" />
+          <br />
           <label style={{ fontWeight: "500" }} htmlFor="email">
             email:
           </label>
           <input type="text" name="email" placeholder="john@gmail.com" />
+          <br />
           <label style={{ fontWeight: "500" }} htmlFor="suggest">
             Suggestion:
           </label>
           <textarea type="text" name="suggest" placeholder="more ducks..." />
+          <br />
           <button type="submit">send</button>
         </form>
       </Card>

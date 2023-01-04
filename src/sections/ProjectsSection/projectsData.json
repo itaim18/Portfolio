@@ -4,7 +4,7 @@
     {
       "id": 1,
       "name": "Chit Chat",
-      "url": "https://chitnchat.netlify.app/",
+      "url": "https://chitnchat.netlify.app/login",
       "code_url": "https://github.com/itaim18/ChitChat",
       "desktop_image": "assets/images/projectsImages/chitchat-desktop.jpeg",
       "mobile_image": "assets/images/projectsImages/chitchat-mobile.jpeg",
