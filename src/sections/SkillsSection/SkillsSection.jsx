@@ -41,7 +41,7 @@ const SkillsSection = () => {
     <div style={{ margin: "auto auto 50px" }} id="skills">
       <h1 style={{ margin: "10px auto", width: "fit-content" }}>Skills</h1>
 
-      <h1 style={{ margin: "2.5% 5%", width: "fit-content" }}>knowledge</h1>
+      <h2 style={{ margin: "5%", width: "fit-content" }}>knowledge</h2>
       <ul className={styles.skillsList}>
         <li>
           <FaHtml5 size={75} title="HTML" style={skillIconStyle} />
@@ -105,7 +105,7 @@ const SkillsSection = () => {
         </li>
       </ul>
       <div id="tools">
-        <h1 style={{ margin: "2.5% 5%", width: "fit-content" }}>tools</h1>
+        <h2 style={{ margin: "5%", width: "fit-content" }}>tools</h2>
         <ul className={styles.toolsList}>
           <li className={styles.riveLogo}>
             <img
@@ -188,7 +188,7 @@ const SkillsSection = () => {
             </p>
           </li>
         </ul>
-        <h1 style={{ margin: "2.5% 5%", width: "fit-content" }}>hobbies</h1>
+        <h2 style={{ margin: "5%", width: "fit-content" }}>hobbies</h2>
         <ul className={styles.toolsList}>
           <li>
             <img

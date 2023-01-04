@@ -1,13 +1,37 @@
-import React from "react";
+import { useEffect } from "react";
 import styles from "./AboutPar.module.css";
 import Button from "../UI/Button/Button";
+import typer from "typer-js";
 const AboutPar = () => {
+  useEffect(() => {
+    typer("#some-id")
+      .cursor({ block: true, blink: "hard", color: "red" })
+      .line("UI/UX Architect")
+      .pause(300)
+      .back("all")
+      .continue("Whovian")
+      .pause(300)
+      .back("all")
+      .continue("FrontEnd Developer", {
+        military: { speed: 20, chars: 2 },
+      });
+  }, []);
+
   return (
     <>
       <div id="about" className={styles.about}>
         <h1>
-          Hi, I'm Itai.
-          <br /> <span>Front-End Developer</span>.
+          Hi, I'm Itai. 👨‍💻
+          <br />
+          <span
+            // class="typer"
+            id="some-id"
+            data-cursordisplay="_"
+            // data-words="poised,punctual,matchmaker.com"
+            // data-colors="#ed426d,#6d67c6,#b74033"
+            // data-delay="50"
+            // data-loop="1"
+          ></span>
         </h1>
         <p>
           I am a <span> UI/UX designer</span>, a <span> react developer</span>{" "}
