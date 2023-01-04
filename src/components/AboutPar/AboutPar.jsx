@@ -21,7 +21,7 @@ const AboutPar = () => {
     <>
       <div id="about" className={styles.about}>
         <h1>
-          Hi, I'm Itai. 👨‍💻
+          I'm Itai. 👨‍💻
           <br />
           <span
             // class="typer"
