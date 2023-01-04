@@ -23,92 +23,86 @@ const SkillsSection = () => {
     padding: "5px ",
   };
   useEffect(() => {
-    VanillaTilt.init(
-      document
-        .getElementById("skills")
-        .querySelectorAll("ul")
-        [(1, 2)].querySelectorAll("li"),
-      {
-        max: 25,
-        speed: 400,
-        glare: true,
-        "max-glare": 0.5,
-        scale: 1.05,
-      }
+    const arr = Array.from(
+      document.getElementById("tools").querySelectorAll("ul li")
     );
+    VanillaTilt.init(arr, {
+      max: 25,
+      speed: 400,
+      glare: true,
+      "max-glare": 0.5,
+      scale: 1.05,
+    });
   }, []);
 
   return (
     <div style={{ margin: "auto auto 50px" }} id="skills">
       <h1 style={{ margin: "10px auto", width: "fit-content" }}>Skills</h1>
-      <section>
-        <h1 style={{ margin: "2.5% 5%", width: "fit-content" }}>knowledge</h1>
-        <ul className={styles.skillsList}>
-          <li>
-            <FaHtml5 size={75} title="HTML" style={skillIconStyle} />
-            <h3>HTML</h3>
-          </li>
-          <li>
-            <FaCss3Alt size={75} title="CSS" style={skillIconStyle} />
-            <h3>CSS</h3>
-          </li>
-          <li>
-            <DiJavascript size={75} title="JS" style={skillIconStyle} />
-            <h3>JS</h3>
-          </li>
-          <li>
-            <FaSass size={75} title="Sass" style={skillIconStyle} />
-            <h3>Sass</h3>
-          </li>
 
-          <li>
-            <FaReact size={75} title="React" style={skillIconStyle} />
-            <h3>React</h3>
-          </li>
-          <li>
-            <FaNodeJs size={75} title="Node.js" style={skillIconStyle} />
-            <h3>Node.js</h3>
-          </li>
-          <li>
-            <SiExpress size={75} title="Express" style={skillIconStyle} />
-            <h3>Express</h3>
-          </li>
-          <li>
-            <SiReactrouter
-              size={75}
-              title="React Router"
-              style={skillIconStyle}
-            />
-            <h3
-              style={{
-                margin: "0px auto",
-                textAlign: "center",
-              }}
-            >
-              React Router
-            </h3>
-          </li>
-          <li>
-            <SiMongodb size={75} title="Next.js" style={skillIconStyle} />
-            <h3>MongoDB </h3>
-          </li>
-          <li>
-            <TbBrandFirebase
-              size={75}
-              title="Firebase"
-              style={skillIconStyle}
-            />
-            <h3>Firebase</h3>
-          </li>
-          <li>
-            <FaBootstrap size={75} title="Bootstrap" style={skillIconStyle} />
-            <h3>Bootstrap</h3>
-          </li>
-          <li>
-            <SiTailwindcss size={75} title="Tailwind" style={skillIconStyle} />
-            <h3>Tailwind</h3>
-          </li>
-        </ul>
+      <h1 style={{ margin: "2.5% 5%", width: "fit-content" }}>knowledge</h1>
+      <ul className={styles.skillsList}>
+        <li>
+          <FaHtml5 size={75} title="HTML" style={skillIconStyle} />
+          <h3>HTML</h3>
+        </li>
+        <li>
+          <FaCss3Alt size={75} title="CSS" style={skillIconStyle} />
+          <h3>CSS</h3>
+        </li>
+        <li>
+          <DiJavascript size={75} title="JS" style={skillIconStyle} />
+          <h3>JS</h3>
+        </li>
+        <li>
+          <FaSass size={75} title="Sass" style={skillIconStyle} />
+          <h3>Sass</h3>
+        </li>
+
+        <li>
+          <FaReact size={75} title="React" style={skillIconStyle} />
+          <h3>React</h3>
+        </li>
+        <li>
+          <FaNodeJs size={75} title="Node.js" style={skillIconStyle} />
+          <h3>Node.js</h3>
+        </li>
+        <li>
+          <SiExpress size={75} title="Express" style={skillIconStyle} />
+          <h3>Express</h3>
+        </li>
+        <li>
+          <SiReactrouter
+            size={75}
+            title="React Router"
+            style={skillIconStyle}
+          />
+          <h3
+            style={{
+              margin: "0px auto",
+              textAlign: "center",
+            }}
+          >
+            React Router
+          </h3>
+        </li>
+        <li>
+          <SiMongodb size={75} title="Next.js" style={skillIconStyle} />
+          <h3>MongoDB </h3>
+        </li>
+        <li>
+          <TbBrandFirebase size={75} title="Firebase" style={skillIconStyle} />
+          <h3>Firebase</h3>
+        </li>
+        <li>
+          <FaBootstrap size={75} title="Bootstrap" style={skillIconStyle} />
+          <h3>Bootstrap</h3>
+        </li>
+        <li>
+          <SiTailwindcss size={75} title="Tailwind" style={skillIconStyle} />
+          <h3>Tailwind</h3>
+        </li>
+      </ul>
+      <div id="tools">
         <h1 style={{ margin: "2.5% 5%", width: "fit-content" }}>tools</h1>
         <ul className={styles.toolsList}>
           <li className={styles.riveLogo}>
@@ -125,7 +119,6 @@ const SkillsSection = () => {
             </p>
           </li>
           <li
-            className="your-element"
             style={{
               transformStyle: "preserve-3d",
               transform: "perspective(1000px)",
@@ -156,7 +149,7 @@ const SkillsSection = () => {
               look more appealing in every OS.
             </p>
           </li>
-          <li className="your-element">
+          <li>
             <img
               src="assets/images/skillsImages/codepen.webp"
               alt="tool"
@@ -168,7 +161,7 @@ const SkillsSection = () => {
               great FE requirements in code.
             </p>
           </li>
-          <li className="your-element">
+          <li>
             <img
               src="assets/images/skillsImages/PS.png"
               alt="tool"
@@ -246,7 +239,7 @@ const SkillsSection = () => {
             </p>
           </li>
         </ul>
-      </section>
+      </div>
     </div>
   );
 };
