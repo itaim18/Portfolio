@@ -81,10 +81,8 @@ h3 {
 .riveLogo:hover {
   position: relative;
   filter: grayscale(0%) invert(1);
-  bottom: 3px;
 }
 .toolsList li:hover {
-  bottom: 3px;
   filter: grayscale(0%);
 }
 

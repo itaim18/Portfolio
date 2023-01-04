@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./SkillsSection.module.css";
 import { TbBrandFirebase } from "react-icons/tb";
 import {
@@ -16,11 +16,28 @@ import {
   SiExpress,
 } from "react-icons/si";
 import { DiJavascript } from "react-icons/di";
+import VanillaTilt from "vanilla-tilt";
 const SkillsSection = () => {
   const skillIconStyle = {
     width: "100%",
     padding: "5px ",
   };
+  useEffect(() => {
+    VanillaTilt.init(
+      document
+        .getElementById("skills")
+        .querySelectorAll("ul")
+        [(1, 2)].querySelectorAll("li"),
+      {
+        max: 25,
+        speed: 400,
+        glare: true,
+        "max-glare": 0.5,
+        scale: 1.05,
+      }
+    );
+  }, []);
+
   return (
     <div style={{ margin: "auto auto 50px" }} id="skills">
       <h1 style={{ margin: "10px auto", width: "fit-content" }}>Skills</h1>
@@ -107,14 +124,21 @@ const SkillsSection = () => {
               only great design, but great animations too.
             </p>
           </li>
-          <li>
+          <li
+            className="your-element"
+            style={{
+              transformStyle: "preserve-3d",
+              transform: "perspective(1000px)",
+            }}
+          >
             <img
               src="assets/images/skillsImages/figma.png"
               alt="tool"
               height={100}
+              style={{ transform: "translateZ(20px)" }}
             />
-            <h3>Figma</h3>
-            <p>
+            <h3 style={{ transform: "translateZ(20px)" }}>Figma</h3>
+            <p style={{ transform: "translateZ(20px)" }}>
               Visioning sites and having a better grasp of what my web app would
               eventually look like, is easier with figma.
             </p>
@@ -132,7 +156,7 @@ const SkillsSection = () => {
               look more appealing in every OS.
             </p>
           </li>
-          <li>
+          <li className="your-element">
             <img
               src="assets/images/skillsImages/codepen.webp"
               alt="tool"
@@ -144,7 +168,7 @@ const SkillsSection = () => {
               great FE requirements in code.
             </p>
           </li>
-          <li>
+          <li className="your-element">
             <img
               src="assets/images/skillsImages/PS.png"
               alt="tool"
