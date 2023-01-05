@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap");
 .about {
   font-family: "Press Start 2P", cursive;
   font-family: Satoshi, sans-serif;
@@ -53,8 +54,61 @@
 
     height: 120px;
   }
+  .about h1::before {
+    content: "<h1>";
+    font-family: "La Belle Aurore", cursive;
+    color: #3a3a3a;
+    font-size: 1.8rem;
+    position: absolute;
+    margin-top: -2rem;
+    left: 3rem;
+  }
+  .about h1:after {
+    content: "<h1/>";
+    font-family: "La Belle Aurore", cursive;
+    color: #3a3a3a;
+    font-size: 1.8rem;
+    position: absolute;
+    margin-top: 0.8rem;
+    margin-left: 3rem;
+  }
   .about p {
     margin: 20px 0;
     max-width: 500px;
+  }
+  .about p::before {
+    content: "<p>";
+    font-family: "La Belle Aurore", cursive;
+    color: #3a3a3a;
+    font-size: 2.4rem;
+    position: absolute;
+    margin-top: -2rem;
+    left: 7rem;
+  }
+  .about p:after {
+    content: "<p/>";
+    font-family: "La Belle Aurore", cursive;
+    color: #3a3a3a;
+    font-size: 2.4rem;
+    position: absolute;
+    margin-top: 0rem;
+    margin-left: 1rem;
+  }
+  .about a::before {
+    content: "<button onclick=`downloadFile`>";
+    font-family: "La Belle Aurore", cursive;
+    color: #3a3a3a;
+    font-size: 2.4rem;
+    position: absolute;
+    margin-top: -2rem;
+  }
+  .about a::after {
+    content: "<button/>";
+    font-family: "La Belle Aurore", cursive;
+    color: #3a3a3a;
+    font-size: 2.4rem;
+    position: absolute;
+    margin-top: 5rem;
+    left: 0rem;
   }
 }

@@ -49,6 +49,7 @@ const NavigationBar = () => {
         <a
           id="resume"
           title="Resume"
+          target="_blank"
           // download="Itai Mizlish - Resume"
           onClick={downloadFile}
         >
