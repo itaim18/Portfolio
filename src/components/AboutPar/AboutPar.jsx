@@ -26,9 +26,9 @@ const AboutPar = () => {
           <span id="some-id"></span>
         </h1>
         <p>
-          I am a <span> UI/UX designer</span>, a <span> react developer</span>{" "}
-          and a quiche lover. College graduate at the age of 19 with a{" "}
-          <span>bachelor degree in computer science</span>.
+          I am a <span> UI/UX designer</span>, a <span> web developer</span>,
+          programmer and An autodidact. Have a sense in solving problems and{" "}
+          <span> graduated with a bachelor degree in computer science</span>.
         </p>
         <a
           title="Resume"

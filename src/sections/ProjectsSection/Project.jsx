@@ -19,14 +19,14 @@ const Project = ({ title, deck, images, liveLink, codeLink }) => {
       origin: "left",
       duration: "700",
       distance: "100%",
-      opacity: 0.3,
+      opacity: 0,
     });
     ScrollReveal({ reset: true }).reveal("#deck", {
       delay: "300",
       origin: "right",
       duration: "700",
       distance: "75%",
-      opacity: 0.3,
+      opacity: 0,
     });
   }, []);
 

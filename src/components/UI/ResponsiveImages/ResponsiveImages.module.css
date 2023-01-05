@@ -40,31 +40,23 @@
 .tablet {
   top: 10%;
   left: 2.5%;
-  width: 90%;
+  width: 80%;
   aspect-ratio: 2/1;
 }
 .desktop {
   width: 95%;
   aspect-ratio: 2/1;
 }
-.tabletSide {
-  top: 11%;
-  left: 90%;
-  border-radius: 10px;
-  height: 60%;
-  width: 7.5%;
-  background: rgb(20, 20, 20);
-  position: absolute;
-}
+
 .tabletBtn {
   position: absolute;
   z-index: 5;
-  top: 50%;
-  left: 15%;
-  width: 15px;
-  height: 15px;
+  top: 40%;
+  right: 5%;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
-  background-color: rgb(110, 110, 110);
+  background-color: rgb(165, 165, 165);
 }
 .back {
   cursor: pointer;
@@ -92,10 +84,10 @@
     left: 15%;
   }
   .computer {
-    top: 65%;
+    top: 55%;
   }
   .computerBottom {
-    top: 75%;
+    top: 65%;
   }
   .back {
     font-size: 42px;
@@ -107,20 +99,52 @@
   }
   .tablet {
     width: 70%;
-    left: 15%;
   }
-  .tabletSide {
-    left: 82.5%;
-    height: 57.5%;
-    width: 5%;
+
+  .tabletBtn {
+    right: 15%;
+    top: 27%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .computer {
+    top: 60%;
+  }
+  .computerBottom {
+    top: 70%;
   }
   .tabletBtn {
-    height: 20px;
-    width: 20px;
-    left: 25%;
+    width: 25px;
+    height: 25px;
+    right: 20%;
+    top: 34%;
   }
 }
 @media screen and (min-width: 1500px) {
+  .desktop {
+    top: 2.5%;
+  }
+  .computer {
+    top: 67.5%;
+  }
+  .computerBottom {
+    top: 77.5%;
+  }
+  .back {
+    font-size: 42px;
+    left: -3%;
+  }
+  .fore {
+    font-size: 42px;
+    right: -3%;
+  }
+
+  .tabletBtn {
+    right: 21%;
+    top: 40%;
+  }
+}
+@media screen and (min-width: 1850px) {
   .desktop {
     top: 2.5%;
   }
@@ -138,15 +162,12 @@
     font-size: 42px;
     right: -3%;
   }
-
-  .tabletSide {
-    left: 82.5%;
-    height: 84%;
-    width: 5%;
+  .tablet {
+    width: 60%;
+    left: 15%;
   }
   .tabletBtn {
-    height: 20px;
-    width: 20px;
-    left: 25%;
+    right: 20%;
+    top: 45%;
   }
 }

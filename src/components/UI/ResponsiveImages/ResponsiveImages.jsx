@@ -38,10 +38,14 @@ const ResponsiveImages = ({ images }) => {
 
       {img === 0 ? (
         <>
-          <img src={images[img]} alt="tablet" className={styles.tablet} />
-          <div className={styles.tabletSide}>
-            <div className={styles.tabletBtn}></div>
-          </div>
+          <img
+            src={images[img]}
+            style={{ borderWidth: "10px 40px 10px 10px" }}
+            alt="tablet"
+            className={styles.tablet}
+          />
+
+          <div className={styles.tabletBtn}></div>
         </>
       ) : null}
       {img === 2 ? (
