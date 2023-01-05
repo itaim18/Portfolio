@@ -21,13 +21,13 @@ const AboutPar = () => {
     <>
       <div id="about" className={styles.about}>
         <h1>
-          I'm Itai. 👨‍💻
+          I'm Itai.
           <br />
           <span id="some-id"></span>
         </h1>
         <p>
           I am a <span> UI/UX designer</span>, a <span> web developer</span>,
-          programmer and An autodidact. Have a sense in solving problems and{" "}
+          programmer and an autodidact. Have a sense in solving problems and{" "}
           <span> graduated with a bachelor degree in computer science</span>.
         </p>
         <a

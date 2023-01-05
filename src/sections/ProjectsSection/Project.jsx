@@ -25,7 +25,7 @@ const Project = ({ title, deck, images, liveLink, codeLink }) => {
       delay: "300",
       origin: "right",
       duration: "700",
-      distance: "75%",
+      distance: "20%",
       opacity: 0,
     });
   }, []);
