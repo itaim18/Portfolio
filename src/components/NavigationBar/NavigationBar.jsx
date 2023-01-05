@@ -23,6 +23,7 @@ const NavigationBar = () => {
   const downloadFile = () => {
     setIsDownloaded(true);
     localStorage.setItem("isDownloaded", "true");
+    window.open("/assets/files/Resume.pdf", "_blank");
   };
   return (
     <div
@@ -46,9 +47,9 @@ const NavigationBar = () => {
           <AiFillPhone />
         </a>
         <a
+          id="resume"
           title="Resume"
-          href="assets/files/Resume.pdf"
-          download="Itai Mizlish - Resume"
+          // download="Itai Mizlish - Resume"
           onClick={downloadFile}
         >
           <BsPersonLinesFill

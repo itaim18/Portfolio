@@ -26,7 +26,12 @@ const ContactSection = () => {
           src="assets/videos/doctorwho.webp"
           alt="doctor"
         />
-        <form className={styles.form} action="">
+        <form
+          className={styles.form}
+          action="mailto:itaim148@gmail.com"
+          method="post"
+          encType="text/plain"
+        >
           <h1>
             Suggest new ideas
             <span
