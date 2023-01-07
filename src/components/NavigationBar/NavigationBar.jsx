@@ -46,13 +46,7 @@ const NavigationBar = () => {
         <a title="Contact" href="#contact">
           <AiFillPhone />
         </a>
-        <a
-          id="resume"
-          title="Resume"
-          target="_blank"
-          // download="Itai Mizlish - Resume"
-          onClick={downloadFile}
-        >
+        <a id="resume" title="Resume" target="_blank" onClick={downloadFile}>
           <BsPersonLinesFill
             className={styles.Resume}
             style={isDownloaded ? pauseAnimation : null}
