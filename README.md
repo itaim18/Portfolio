@@ -9,8 +9,8 @@
  
 ## 💻 Description
  <img src="https://github.com/itaim18/Portfolio/blob/master/tn-p.jpeg" alt="logo"  >
+ 
  #### My Personal Portfolio Site.
-
  
 including: 
 - About me.
