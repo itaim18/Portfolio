@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./App.css";
 import FaceIcon from "./components/FaceIcon/FaceIcon";
 import NavigationBar from "./components/NavigationBar/NavigationBar";
@@ -5,7 +6,9 @@ import AboutPar from "./components/AboutPar/AboutPar";
 import ProjectsSection from "./sections/ProjectsSection/ProjectsSection";
 import SkillsSection from "./sections/SkillsSection/SkillsSection";
 import ContactSection from "./sections/ContactSection/ContactSection";
-// import moveRight from "./utils/face";
+import soundContext from "./context/soundContext";
+import VolumeIcon from "./components/UI/VolumeIcon/VolumeIcon";
+
 const moveRight = () => {
   const face = document.getElementById("face");
   if (scrollY > 312) {
@@ -15,21 +18,28 @@ const moveRight = () => {
   }
 };
 window.addEventListener("scroll", moveRight);
-// think of another animations
+
 function App() {
+  const [soundOn, setSoundOn] = useState(false);
+  const toggleSound = () => {
+    setSoundOn((prevState) => !prevState);
+  };
   return (
-    <div className="App">
-      <NavigationBar />
-      <FaceIcon />
-      <AboutPar />
-      <div className="Box">
-        {/* projects section */}
-        <ProjectsSection />
-        {/* skills section  */}
-        <SkillsSection />
-        <ContactSection />
+    <soundContext.Provider value={{ soundOn: soundOn }}>
+      <div className="App">
+        <VolumeIcon toggleSound={toggleSound} />
+        <NavigationBar />
+        <FaceIcon />
+        <AboutPar />
+        <div className="Box">
+          {/* projects section */}
+          <ProjectsSection />
+          {/* skills section  */}
+          <SkillsSection />
+          <ContactSection />
+        </div>
       </div>
-    </div>
+    </soundContext.Provider>
   );
 }
 
