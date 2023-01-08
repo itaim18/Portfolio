@@ -5,7 +5,7 @@ import on from "../../../sounds/switch-on.mp3";
 import soundContext from "../../../context/soundContext";
 const Button = (props) => {
   const soundOn = useContext(soundContext);
-  const [play] = useSound(on);
+  const [play] = useSound(on, { volume: 0.5 });
   const { colorFront, colorEdge } = props;
   return (
     <button

@@ -9,7 +9,7 @@ import useSound from "use-sound";
 import popSfx from "../../sounds/pop.mp3";
 import soundContext from "../../context/soundContext";
 const NavigationBar = () => {
-  const [play] = useSound(popSfx, { playbackRate: 0.5 });
+  const [play] = useSound(popSfx, { playbackRate: 0.5, volume: 0.1 });
   const soundOn = useContext(soundContext);
   const [isDownloaded, setIsDownloaded] = useState(false);
   useEffect(() => {
