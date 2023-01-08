@@ -5,8 +5,11 @@ import { IoIosApps } from "react-icons/io";
 import { FaShapes } from "react-icons/fa";
 import { AiFillPhone, AiOutlineClose } from "react-icons/ai";
 import { GiHamburgerMenu } from "react-icons/gi";
-
+import useSound from "use-sound";
+import popSfx from "../../sounds/pop.mp3";
 const NavigationBar = () => {
+  const [play] = useSound(popSfx, { playbackRate: 0.5 });
+
   const [isDownloaded, setIsDownloaded] = useState(false);
   useEffect(() => {
     const checkD = localStorage.getItem("isDownloaded");
@@ -30,23 +33,29 @@ const NavigationBar = () => {
       className={`${styles.topnav} ${showSubMenu ? styles.responsive : null} `}
       id="myTopnav"
     >
-      <a className={styles.icon} onClick={toggleMenu}>
+      <a className={styles.icon} onClick={toggleMenu} onMouseEnter={play}>
         {showSubMenu ? <AiOutlineClose /> : <GiHamburgerMenu />}
       </a>
       <div className={styles.links}>
-        <a title="Home" href="#">
+        <a title="Home" href="#" onMouseEnter={play}>
           <BsFillHouseFill />
         </a>
-        <a title="Projects" href="#projects">
+        <a title="Projects" href="#projects" onMouseEnter={play}>
           <IoIosApps />
         </a>
-        <a title="Skills" href="#skills">
+        <a title="Skills" href="#skills" onMouseEnter={play}>
           <FaShapes />
         </a>
-        <a title="Contact" href="#contact">
+        <a title="Contact" href="#contact" onMouseEnter={play}>
           <AiFillPhone />
         </a>
-        <a id="resume" title="Resume" target="_blank" onClick={downloadFile}>
+        <a
+          id="resume"
+          title="Resume"
+          target="_blank"
+          onMouseEnter={play}
+          onClick={downloadFile}
+        >
           <BsPersonLinesFill
             className={styles.Resume}
             style={isDownloaded ? pauseAnimation : null}
