@@ -6,9 +6,12 @@
 - 
 
 # [Portfolio](https://itaimiz.com/)
-
+ <img src="https://github.com/itaim18/Portfolio/blob/master/favicon.jpeg" alt="logo" width="180" >
+ 
 ## 💻 Description
-My Personal Portfolio Site.
+ <img src="https://github.com/itaim18/Portfolio/blob/master/tn-p.jpeg" alt="logo"  >
+> My Personal Portfolio Site.
+
 including: 
 - About me.
 - Projects.
