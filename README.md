@@ -3,7 +3,6 @@
 - Data tables in json with functional programming used upon it.
 - Custom UI/UX created personally by CSS files and inline style objects.
 - Js libraries for better User Experience such as scrollreveal.js, vanilla-tilt etc.
-- 
 
 # [Portfolio](https://itaimiz.com/)
  <img src="https://github.com/itaim18/Portfolio/blob/master/favicon%20(2).jpeg" alt="logo" width="180" >
@@ -11,6 +10,7 @@
 ## 💻 Description
  <img src="https://github.com/itaim18/Portfolio/blob/master/tn-p.jpeg" alt="logo"  >
  > My Personal Portfolio Site.
+ > 
  
 including: 
 - About me.
