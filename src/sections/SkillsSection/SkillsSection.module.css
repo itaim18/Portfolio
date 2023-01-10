@@ -61,7 +61,7 @@ h3 {
   justify-content: flex-start;
 }
 .toolsList li:hover {
-  color: rgb(243, 243, 243);
+  color: rgb(50, 50, 50);
   box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.37);
 }
 

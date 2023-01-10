@@ -1,0 +1,21 @@
+.volume {
+  color: aliceblue;
+  font-size: 36px;
+  position: fixed;
+  opacity: 0.5;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  z-index: 7;
+  border-radius: 10px;
+  border: solid;
+}
+.volume:hover {
+  opacity: 1;
+}
+@media screen and (max-width: 450px) {
+  .volume {
+    display: none;
+  }
+}
