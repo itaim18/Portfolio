@@ -43,10 +43,19 @@ const Project = ({ title, deck, images, liveLink, codeLink }) => {
           flexDirection: "row",
         }}
       >
-        <a href={liveLink}>
+        <div
+          onClick={() => {
+            window.open(liveLink, "_blank");
+          }}
+        >
           <Button>Live site</Button>
-        </a>
-        <a href={codeLink}>
+        </div>
+
+        <div
+          onClick={() => {
+            window.open(codeLink, "_blank");
+          }}
+        >
           <Button
             colorEdge={{
               background:
@@ -56,7 +65,7 @@ const Project = ({ title, deck, images, liveLink, codeLink }) => {
           >
             code
           </Button>
-        </a>
+        </div>
       </div>
     </article>
   );
