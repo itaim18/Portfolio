@@ -13,6 +13,7 @@ body,
   position: relative;
   top: -65%;
   width: 100%;
+
   height: fit-content;
   display: flex;
   flex-direction: column;
