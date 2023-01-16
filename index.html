@@ -30,16 +30,29 @@
       background: url("pageloader.gif") 50% 50% no-repeat rgb(255, 255, 255);
     }
   </style>
-  <body>
+  <body onload="fade()">
     <div id="loader"></div>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
     <script src="http://code.jquery.com/jquery-1.8.2.js"></script>
 
     <script type="text/javascript">
-      $(window).load(function () {
-        $("#loader").fadeOut(1000);
-      });
+      function fade() {
+        var fadeTarget = document.getElementById("loader");
+        var fadeEffect = setInterval(function () {
+          if (!fadeTarget.style.opacity) {
+            fadeTarget.style.opacity = 1;
+          }
+          if (fadeTarget.style.opacity > 0) {
+            fadeTarget.style.opacity -= 0.1;
+          } else {
+            clearInterval(fadeEffect);
+          }
+        }, 50);
+        setInterval(() => {
+          fadeTarget.parentNode.removeChild(fadeTarget);
+        }, 1000);
+      }
     </script>
   </body>
 </html>
