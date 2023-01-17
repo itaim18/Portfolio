@@ -6,9 +6,6 @@ const ContactSection = () => {
     var Text = document.getElementById("content");
     var copyText = Text.textContent;
     navigator.clipboard.writeText(copyText).then(() => {
-      // Alert the user that the action took place.
-      // Nobody likes hidden stuff being done under the hood!
-
       Text.textContent = "Copied!";
       Text.style.color = "#00a7c9";
       setTimeout(() => {
@@ -43,16 +40,19 @@ const ContactSection = () => {
           <label style={{ fontWeight: "500" }} htmlFor="name">
             Name:
           </label>
+          <br />
           <input type="text" name="name" placeholder="john" />
           <br />
           <label style={{ fontWeight: "500" }} htmlFor="email">
             email:
           </label>
+          <br />
           <input type="text" name="email" placeholder="john@gmail.com" />
           <br />
           <label style={{ fontWeight: "500" }} htmlFor="suggest">
             Suggestion:
           </label>
+          <br />
           <textarea type="text" name="suggest" placeholder="more ducks..." />
           <br />
           <button type="submit">send</button>
@@ -91,8 +91,6 @@ const ContactSection = () => {
             </p>
 
             <p style={{ color: "coral" }}> Central, Israel</p>
-
-            <p style={{ color: "coral" }}> Created In Dec 22</p>
           </li>
         </ul>
       </div>
