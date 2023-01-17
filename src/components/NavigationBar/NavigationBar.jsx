@@ -8,6 +8,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import useSound from "use-sound";
 import popSfx from "../../sounds/pop.mp3";
 import soundContext from "../../context/soundContext";
+import MenuIcon from "../MenuIcon/MenuIcon";
 const NavigationBar = () => {
   const [play] = useSound(popSfx, { playbackRate: 0.5, volume: 0.5 });
   const soundOn = useContext(soundContext);
@@ -39,7 +40,8 @@ const NavigationBar = () => {
       id="myTopnav"
     >
       <a className={styles.icon} onClick={toggleMenu}>
-        {showSubMenu ? <AiOutlineClose /> : <GiHamburgerMenu />}
+        <MenuIcon />
+        {/* {showSubMenu ? <AiOutlineClose /> : <GiHamburgerMenu />} */}
       </a>
       <div className={styles.links}>
         <a

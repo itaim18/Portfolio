@@ -49,11 +49,9 @@
             clearInterval(fadeEffect);
           }
         }, 20);
-        var removeC = setInterval(() => {
-          fadeTarget.parentNode.removeChild(fadeTarget);
-        }, 1000);
+
+        fadeTarget.parentNode.removeChild(fadeTarget);
       }
-      clearInterval(removeC);
     </script>
   </body>
 </html>
