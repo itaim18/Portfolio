@@ -40,8 +40,8 @@ const NavigationBar = () => {
       id="myTopnav"
     >
       <a className={styles.icon} onClick={toggleMenu}>
-        <MenuIcon />
-        {/* {showSubMenu ? <AiOutlineClose /> : <GiHamburgerMenu />} */}
+        {/* <MenuIcon /> */}
+        {showSubMenu ? <AiOutlineClose /> : <GiHamburgerMenu />}
       </a>
       <div className={styles.links}>
         <a
