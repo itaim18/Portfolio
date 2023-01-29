@@ -6,7 +6,7 @@ const AboutPar = () => {
   useEffect(() => {
     typer("#some-id")
       .cursor({ block: true, blink: "hard", color: "red" })
-      .line("UI/UX Architect,")
+      .line("Fullstack Architect,")
       .pause(300)
       .back("all")
       .continue("Whovian,")
@@ -26,9 +26,9 @@ const AboutPar = () => {
           <span id="some-id"></span>
         </h1>
         <p>
-          I am a <span> UI/UX designer</span>, a <span> web developer</span>,
+          I am a <span> Fullstack Developer</span>, a <span> web developer</span>,
           programmer and an autodidact. Have a sense in solving problems and{" "}
-          <span> graduated with a bachelor degree in computer science</span>.
+          <span> graduated with a bachelor degree in computer science at the age of 19</span>.
         </p>
         <a
           title="Resume"
