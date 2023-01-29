@@ -48,6 +48,7 @@
   display: none;
 }
 .Resume {
+  width: 28px;
   color: #3676ff;
   position: relative;
   transition: all 0.5s ease-in-out;
@@ -62,23 +63,25 @@
     transform: rotateZ(0) scale(1);
   }
   15% {
-    transform: rotateZ(-15deg) scale(1.025);
+    transform: rotateZ(-15deg) scale(1.25);
   }
   20% {
-    transform: rotateZ(10deg) scale(1.05);
+    transform: rotateZ(10deg) scale(1.3);
   }
   25% {
-    transform: rotateZ(-10deg) scale(1.075);
+    transform: rotateZ(-10deg) scale(1.4);
   }
   30% {
-    transform: rotateZ(6deg) scale(1.1);
+    transform: rotateZ(6deg) scale(1.5);
   }
   35% {
-    transform: rotateZ(-4deg) scale(1.075);
+    transform: rotateZ(-4deg) scale(1.5);
   }
-  40%,
+  40% {
+    transform: rotateZ(0) scale(1.5);
+  }
   100% {
-    transform: rotateZ(0) scale(1.05);
+    transform: rotateZ(0) scale(1);
   }
 }
 @media screen and (min-width: 450px) {

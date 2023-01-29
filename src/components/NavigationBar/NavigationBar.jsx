@@ -89,7 +89,8 @@ const NavigationBar = () => {
           }}
           onClick={downloadFile}
         >
-          <BsPersonLinesFill
+          <img
+            src="/assets/images/CV.png"
             className={styles.Resume}
             style={isDownloaded ? pauseAnimation : null}
           />
