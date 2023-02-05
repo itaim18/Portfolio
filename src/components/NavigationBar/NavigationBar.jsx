@@ -1,6 +1,10 @@
 import { useState, useEffect, useContext } from "react";
 import styles from "./NavigationBar.module.css";
-import { BsFillHouseFill, BsPersonLinesFill } from "react-icons/bs";
+import {
+  BsFillFileEarmarkPersonFill,
+  BsFillHouseFill,
+  BsPersonLinesFill,
+} from "react-icons/bs";
 import { IoIosApps } from "react-icons/io";
 import { FaShapes } from "react-icons/fa";
 import { AiFillPhone, AiOutlineClose } from "react-icons/ai";
@@ -89,11 +93,15 @@ const NavigationBar = () => {
           }}
           onClick={downloadFile}
         >
-          <img
-            src="/assets/images/CV.png"
+          <BsFillFileEarmarkPersonFill
             className={styles.Resume}
             style={isDownloaded ? pauseAnimation : null}
           />
+          {/* <img
+            src="/assets/images/CV.png"
+            className={styles.Resume}
+            style={isDownloaded ? pauseAnimation : null}
+          /> */}
         </a>
       </div>
     </div>

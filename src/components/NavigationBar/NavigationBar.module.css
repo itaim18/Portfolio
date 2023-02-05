@@ -56,6 +56,7 @@
 }
 .Resume:hover {
   animation: none;
+  transform: scale(1.4);
 }
 @keyframes wiggle {
   0%,
